@@ -1,0 +1,28 @@
+
+//Colours
+$text-light: #FFFFFF;
+$text-dark: #343F56;
+$blue-dark: #384259;
+$grey-light: #F9F9FA;
+$grey: #ABB4CB;
+$green: #7AC7C4;
+
+
+body {
+  margin:0;
+  font-family: 'Inter', sans-serif;
+  color: $text-dark;
+}
+
+main {
+  margin-bottom: 100px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 36px;
+  margin-bottom: 8px;
+}

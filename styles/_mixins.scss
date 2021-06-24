@@ -1,0 +1,53 @@
+
+//Breakpoints
+$medium-min: 576px;
+$large-min: 992px;
+$xlarge-min: 1200px;
+
+//Mixins
+// Medium devices
+@mixin md {
+  @media (min-width: #{$medium-min}) {
+      @content;
+  }
+}
+
+// Large devices
+@mixin lg {
+  @media (min-width: #{$large-min}) {
+      @content;
+  }
+}
+
+// Extra large devices
+@mixin xl {
+  @media (min-width: #{$xlarge-min}) {
+      @content;
+  }
+}
+
+
+//FAQ icon
+@mixin faqIcon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 24px;
+  height: 24px;
+  background-color: $green;
+  border-radius: 100px;
+
+  .icon-vertical {
+    display: block;
+    position: absolute;
+    height: 16px;
+    width: 2px;
+    background-color: $text-light;
+  }
+  .icon-horizontal {
+    display: block;
+    height: 2px;
+    width: 16px;
+    background-color: $text-light;
+  }
+}

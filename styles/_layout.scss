@@ -1,0 +1,22 @@
+
+.container {
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+
+  @include md {
+    max-width: 85%;
+  }
+  @include lg {
+    max-width: 75%;
+  }
+  @include xl {
+    max-width: 66%;
+  }
+}
+
+footer {
+  background-color: $grey-light;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}

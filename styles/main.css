@@ -1,0 +1,174 @@
+body {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  color: #343F56;
+}
+
+main {
+  margin-bottom: 100px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 36px;
+  margin-bottom: 8px;
+}
+
+.container {
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media (min-width: 576px) {
+  .container {
+    max-width: 85%;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    max-width: 75%;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    max-width: 66%;
+  }
+}
+
+footer {
+  background-color: #F9F9FA;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+a {
+  font-weight: 600;
+  color: #343F56;
+}
+
+.banner {
+  background-color: #384259;
+  color: #FFFFFF;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin-bottom: 40px;
+}
+@media (min-width: 992px) {
+  .banner {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}
+@media (min-width: 1200px) {
+  .banner {
+    padding-top: 100px;
+    padding-bottom: 80px;
+  }
+}
+
+.subtitle {
+  color: #ABB4CB;
+  font-size: 16px;
+}
+
+.accordion section {
+  border-bottom: 1px solid rgba(122, 199, 196, 0.4);
+  position: relative;
+  cursor: pointer;
+}
+@media (min-width: 576px) {
+  .accordion section:hover {
+    background-color: #F9F9FA;
+  }
+}
+.accordion section h4 {
+  display: inline-block;
+  font-weight: 600;
+  margin-left: 8px;
+}
+.accordion section .faq-content {
+  margin-top: 0;
+  margin-left: 8px;
+  opacity: 1;
+  visibility: visible;
+  height: auto;
+  cursor: default;
+  transition: all 500ms;
+  z-index: -1;
+}
+@media (min-width: 576px) {
+  .accordion section .faq-content:hover {
+    background-color: transparent;
+  }
+}
+.accordion section .faq-content.hidden {
+  margin-top: -20px;
+  height: 0;
+  opacity: 0;
+  visibility: hidden;
+}
+
+@media (min-width: 576px) {
+  .faq-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 24px;
+    height: 24px;
+    background-color: #7AC7C4;
+    border-radius: 100px;
+    position: absolute;
+    top: 18px;
+    left: -40px;
+    cursor: pointer;
+  }
+  .faq-icon .icon-vertical {
+    display: block;
+    position: absolute;
+    height: 16px;
+    width: 2px;
+    background-color: #FFFFFF;
+  }
+  .faq-icon .icon-horizontal {
+    display: block;
+    height: 2px;
+    width: 16px;
+    background-color: #FFFFFF;
+  }
+  .faq-icon .icon-vertical {
+    transition: all 500ms;
+  }
+  .faq-icon .icon-vertical.hidden {
+    transform: rotate(90deg);
+  }
+}
+
+.live-chat-cta {
+  color: #FFFFFF;
+  font-weight: 700;
+  display: inline-flex;
+  padding: 10px 16px;
+  margin-bottom: 24px;
+  background-color: #7AC7C4;
+  border-radius: 100px;
+  cursor: pointer;
+}
+
+.speech-icon {
+  display: inline-block;
+  background: url("../images/speech-icon.png") no-repeat;
+  background-size: 20px 20px;
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+}
+
+.hidden {
+  opacity: 0.4;
+  height: 0;
+}
+
+/*# sourceMappingURL=main.css.map */
